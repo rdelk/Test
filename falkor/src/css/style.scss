@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ * 
+ * sass --watch style.scss:style.min.css --style compressed
+ * 
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "inuit.css/inuit";
+
+/*
+ * Contrib
+ */
+
+@import "../components/bourbon/app/assets/stylesheets/bourbon";
+
+
+/**
+ * Theme
+ */
+
+@import "modules/mixins";
+@import "modules/text";
+@import "modules/layout";
+@import "modules/blocks";
+@import "modules/lists";
+@import "modules/nav";
+@import "modules/buttons";
+@import "modules/images";
+@import "modules/fields";
+@import "modules/views";

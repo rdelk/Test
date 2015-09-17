@@ -1,0 +1,23 @@
+name = Falkor
+description = Project starter theme by <a href="https://twitter.com/aaronlsilber" target="_blank">Aaron Silber</a>. Includes Modernizr, jQuery 1.7.1, Flexslider, <a href="https://github.com/csswizardry/inuit.css/tree/v4.5.5" target="_blank">inuitCSS 4.5.5</a>, and a boxsizing polyfill.
+core = 7.x
+engine = phptemplate
+
+screenshot = dist/img/screenshot.png
+
+;Stylesheets
+stylesheets[all][] = dist/css/style.min.css
+
+;Libraries
+scripts[] = dist/components/modernizr/modernizr.min.js
+
+;Plugins
+
+;Scripts
+scripts[] = dist/js/scripts.min.js
+
+;Regions
+regions[header]					= Header
+regions[content]				= Content
+regions[sidebar]  				= Sidebar
+regions[footer]					= Footer

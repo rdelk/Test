@@ -1,0 +1,69 @@
+/*
+ * Utilities
+ */
+
+	* {
+		*behavior: url('../util/boxsizing.htc');
+	}
+
+	.element--invisible {
+		position: absolute !important;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px,1px,1px,1px);
+		overflow: hidden;
+		height: 1px;
+	}
+
+	%kill-last-child {
+		& > *:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	%ir {
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.l-center-block {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.l-contain {
+		max-width: $max-width;
+		margin: 0 auto;
+
+		padding: 0 $gutter-width/2;
+
+		@include media-query(lap-and-up) {
+			padding: 0 $gutter-width;
+		}
+	}
+
+	.expand {
+		display: block;
+		width: 100%;
+	}
+
+	@each $breakpoint in $breakpoints {
+		.hide--#{$breakpoint} {
+			@include media-query($breakpoint) {
+				display: none;
+				visibility: hidden;
+			}
+		}
+	}
+
+/* 
+ * Low-level structural containers
+ */
+
+	html {
+		
+	}
+
+	body {
+		
+	}
